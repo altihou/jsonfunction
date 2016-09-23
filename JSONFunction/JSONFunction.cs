@@ -177,6 +177,11 @@ namespace JSONFunction
             inJson.Add(code, new JValue(value));
             return inJson;
         }
+        public static JObject Add(JObject inJson, String code, JObject value)
+        {
+            inJson.Add(code, value );
+            return inJson;
+        }
         public static string SerializeJson(object obj)
         {
             string JsonString = "";
